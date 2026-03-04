@@ -12,7 +12,7 @@ public class CustomList {
 
     public void addCity(City city) {
 
-        //cities.add(city);
+        cities.add(city);
     }
 
     // Will be implemented later using TDD (leave blank for now)
