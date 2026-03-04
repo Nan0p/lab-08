@@ -23,4 +23,15 @@ public class CustomListTest {
         assertEquals(list.getCount(), 2);
     }
 
+    @Test
+    public void testDeleteCity(){
+        CustomList list = new CustomList();
+        City calgary = new City("Calgary", "AB");
+        City edmonton = new City("Edmonton", "AB");
+        list.addCity(calgary);
+        int listSize = list.getCount();
+        list.addCity(edmonton);
+        list.deleteCity(calgary);
+        assertEquals(listSize, list.getCount());
+    }
 }
